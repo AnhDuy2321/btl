@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="200.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.test.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ĐĂNG NHẬP" textAlignment="CENTER" wrappingWidth="294.34571838378906">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <HBox prefHeight="100.0" prefWidth="461.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tên đăng nhập" />
+            <TextField fx:id="txtUserName" prefHeight="26.0" prefWidth="378.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu" />
+            <TextField fx:id="txtPassWord" prefHeight="26.0" prefWidth="404.0" />
+         </children>
+      </HBox>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="112.0" layoutY="-3.0" mnemonicParsing="false" text="Đăng ký" />
+            <Button fx:id="btnDangNhap" layoutX="296.0" layoutY="-3.0" mnemonicParsing="false" text="Đăng nhập" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
